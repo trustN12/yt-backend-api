@@ -10,3 +10,4 @@
 - EXPRESS-FILEUPLOAD
 - DOTENV
 - POSTMAN
+- JWT(openssl rand -base64 32)
