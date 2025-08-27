@@ -6,6 +6,7 @@ import bodyParser from "body-parser";
 import { ConnectDB } from "./config/db.config.js";
 import userRoutes from "./routes/user.routes.js";
 import videoRoutes from "./routes/video.routes.js"
+import commentRoutes from "./routes/comment.routes.js"
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.use(
 //todo: Middleware setup
 app.use("/api/v1/user", userRoutes);
 app.use("/api/v1/video", videoRoutes);
+app.use("/api/v1/video", commentRoutes)
 
 const port = process.env.PORT;
 
